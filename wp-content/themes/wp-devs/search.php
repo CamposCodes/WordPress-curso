@@ -41,8 +41,12 @@
                         <?php the_excerpt(); ?> <!-- conteudio todo -->
                     </div>
                 </article>
+
                 <?php
             endwhile;
+
+            the_posts_pagination();
+
             ?>
         </div>
     </div>
