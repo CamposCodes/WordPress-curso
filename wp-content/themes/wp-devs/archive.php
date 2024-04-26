@@ -14,7 +14,7 @@
                     if (have_posts()):
                         while (have_posts()):
                             the_post();
-                            get_template_part('parts/content', 'archive');
+                            get_template_part('parts/content');
                         endwhile; ?>
                         <div class="wpdevs-pagination">
                             <div class="pages new">

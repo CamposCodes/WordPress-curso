@@ -19,7 +19,7 @@
                             'WP_Widget_Recent_Posts',
                             array(
                                 'title' => 'Latest Posts',
-                                'number' => 3
+                                'number' => 4
                             )
                         ); ?>
                     </div>
