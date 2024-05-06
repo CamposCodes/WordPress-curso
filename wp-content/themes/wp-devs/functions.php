@@ -1,5 +1,7 @@
 <?php
 
+require get_template_directory() . '/inc/customizer.php';
+
 function wpdevs_load_scripts()
 {
     wp_enqueue_style('wpdevs-style', get_stylesheet_uri(), array(), filemtime(
@@ -45,15 +47,17 @@ function wpdevs_config()
     add_theme_support('automatic-feed-links');
 
     //suport html5
-    add_theme_support('html5', array(
-        'comment-list',
-        'comment-form',
-        'search-form',
-        'gallery',
-        'caption',
-        'style',
-        'script'
-    )
+    add_theme_support(
+        'html5',
+        array(
+            'comment-list',
+            'comment-form',
+            'search-form',
+            'gallery',
+            'caption',
+            'style',
+            'script'
+        )
     );
 
     add_theme_support('title-tag');

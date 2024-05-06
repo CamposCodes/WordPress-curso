@@ -386,9 +386,9 @@ template {
     --wpdevs-gray1: #7c7c7c;
     --wpdevs-gray2: #f7f7f7;
     --wpdevs-gray3: #dddddd;
-    --wpdevs-light-blue: #1c1c1c;
-    --wpdevs-deep-blue: #0a0a0a;
-    --wpdevs-black-blue: #000;
+    --wpdevs-light-blue: #182837;
+    --wpdevs-deep-blue: #182837;
+    --wpdevs-black-blue: #0c1824;
     /*--wpdevs-black-blue: #001e32;
     --wpdevs-light-blue: #2a92d3;
     --wpdevs-deep-blue: #213c4d;
@@ -698,7 +698,7 @@ img {
 
 /* Services */
 .services {
-    background: #000;
+    background: var(--wpdevs-black-blue);
     padding: var(--wpdevs-big-padding);
     color: #ffffff;
 }
