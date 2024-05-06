@@ -41,6 +41,21 @@ function wpdevs_config()
         )
     );
 
+    // suport feed rss
+    add_theme_support('automatic-feed-links');
+
+    //suport html5
+    add_theme_support('html5', array(
+        'comment-list',
+        'comment-form',
+        'search-form',
+        'gallery',
+        'caption',
+        'style',
+        'script'
+    )
+    );
+
     add_theme_support('title-tag');
 
 }
@@ -98,4 +113,11 @@ function wpdevs_sidebar()
 
 
 
+}
+
+if (!function_exists('wp_body_open')) {
+    function wp_body_open()
+    {
+        do_action('wp_body_open');
+    }
 }
