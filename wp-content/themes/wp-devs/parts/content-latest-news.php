@@ -1,7 +1,9 @@
 <article class="latest-news">
-    <a href="<?php the_permalink(); ?>">
-        <?php the_post_thumbnail(array(500, 500)); ?>
-    </a>
+    <?php if (has_post_thumbnail()): ?>
+        <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail(array(500, 500)); ?>
+        </a>
+    <?php endif; ?>
     <h3>
         <a href="<?php the_permalink(); ?>">
             <?php the_title() ?>
